@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Web Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generative AI Web Interface</h1>
+
+        <form id="upload-form" enctype="multipart/form-data">
+            <label for="file-upload">Upload PDF File:</label>
+            <input type="file" id="file-upload" name="file">
+            <button type="submit">Upload</button>
+            <p id="upload-status"></p>
+        </form>
+
+        <div class="chat-box">
+            <textarea id="user-input" placeholder="Type your message here..."></textarea>
+            <button id="send-btn">Send</button>
+            <div id="response-box"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
